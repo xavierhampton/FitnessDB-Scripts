@@ -1,6 +1,5 @@
 class initDatabase:
-    def __init__(self, cnx, cursor):
-        self.cnx = cnx
+    def __init__(self, cursor):
         self.cursor = cursor
 
     #Runs the database initalization
