@@ -10,3 +10,5 @@ class ClientExercises:
         except:
             clientID = -1
 
+       
+

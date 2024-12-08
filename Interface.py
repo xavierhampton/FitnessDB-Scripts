@@ -12,7 +12,7 @@ def main():
 
     #Calls database initalization script
     #Inputs test data and sets up database
-    initDatabase(cnx, cursor).run()
+    initDatabase(cursor).run()
 
     #Prompts the user for their function
     userInput = -1
