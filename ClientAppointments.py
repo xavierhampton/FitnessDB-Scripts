@@ -18,7 +18,8 @@ class ClientAppointments:
                     WHERE TRAINER.Trainer_ID = APPOINTMENT.Trainer AND 
                     GYM.Gym_ID = APPOINTMENT.Gym AND
                     CLIENT.Client_ID = APPOINTMENT.Client AND
-                    APPT_DATE > %s AND CLIENT.Client_ID = %s"""
+                    APPT_DATE > %s AND CLIENT.Client_ID = %s
+                    ORDER BY APPT_DATE ASC"""
 
         self.cursor.execute(query, (curDate, clientID))
 
