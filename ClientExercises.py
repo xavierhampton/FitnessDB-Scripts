@@ -23,7 +23,8 @@ class ClientExercises:
                     FROM EXERCISE, CLIENT
                     WHERE Client=Client_ID AND 
                     EXERCISE.Date=%s AND
-                    Client_ID=%s"""
+                    Client_ID=%s
+                    SORT BY EXERCISE.Name ASC"""
         
 
         self.cursor.execute(query, (userDate, clientID))
