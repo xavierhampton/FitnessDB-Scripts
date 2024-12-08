@@ -1,6 +1,6 @@
 import mysql.connector # type: ignore
 from initDatabase import initDatabase
-from FutureClientDates import FutureClientDates
+from ClientAppointments import ClientAppointments
 from ClientExercises import ClientExercises
 from TrainerUpcomingAppointment import TrainerUpcomingAppointment
 
@@ -33,7 +33,7 @@ def main():
         #Matches user input to respected cases
         match userInput:
             case 1:
-                FutureClientDates(cursor).run()
+                ClientAppointments(cursor).run()
             case 2: 
                 ClientExercises(cursor).run()
             case 3:
