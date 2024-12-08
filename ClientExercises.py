@@ -24,7 +24,7 @@ class ClientExercises:
                     WHERE Client=Client_ID AND 
                     EXERCISE.Date=%s AND
                     Client_ID=%s
-                    SORT BY EXERCISE.Name ASC"""
+                    ORDER BY EXERCISE.Name ASC"""
         
 
         self.cursor.execute(query, (userDate, clientID))
