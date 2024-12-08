@@ -37,6 +37,6 @@ class ClientAppointments:
             itr += 1
         
         if itr == 0:
-            print("------------------------------")
+            print("------------------------------\n")
             print(f'There is no Scheduled Future Appointments \n')
             
